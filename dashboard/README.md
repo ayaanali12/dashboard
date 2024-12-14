@@ -24,7 +24,7 @@ The dashboard includes:
 
 ## Tech Stack
 
-- **Frontend Framework**: React.js / Next.js
+- **Frontend Framework**: React.js
 - **Styling**: Tailwind CSS
 - **Version Control**: Git & GitHub
 
@@ -72,13 +72,13 @@ The dashboard includes:
 ## Screenshots
 
 ### Desktop View
-![Desktop View](./screenshots/desktop-view.png)
+![Desktop View](./screenshots/laptop.jpg)
 
 ### Tablet View
-![Tablet View](./screenshots/tablet-view.png)
+![Tablet View](./screenshots/tablet.jpg)
 
 ### Mobile View
-![Mobile View](./screenshots/mobile-view.png)
+![Mobile View](./screenshots/mobile.jpg)
 
 ---
 
