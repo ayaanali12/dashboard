@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# Jur Dashboard - React.js/Next.js Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project replicates a dashboard design as per the provided image. It includes features like responsive design, form validation, and modular components.
 
-## Available Scripts
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [Tech Stack](#tech-stack)
+3. [Approach](#approach)
+4. [Challenges](#challenges)
+5. [Assumptions](#assumptions)
+6. [Screenshots](#screenshots)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The dashboard includes:
+- A **sidebar** navigation menu.
+- A **progress bar** showing steps for claim submission.
+- A **claim form** with input fields, checkboxes, and file upload components.
+- A responsive layout that adapts seamlessly to desktop, tablet, and mobile screens.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend Framework**: React.js / Next.js
+- **Styling**: Tailwind CSS
+- **Version Control**: Git & GitHub
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Approach
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Modular Components**:  
+   - Created reusable components: `Sidebar`, `ProgressBar`, `ClaimForm`, and `UploadField`.
+   - Ensured components are clean, scalable, and easy to maintain.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Responsive Design**:  
+   - Utilized Tailwind CSS grid system and responsive utilities (`grid-cols`, `flex`, `md`, `sm` breakpoints).
 
-### `npm run eject`
+3. **Form Validation**:  
+   - Added validation to ensure required fields (e.g., Contract Value) are filled.  
+   - Used controlled inputs for interactivity.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Dynamic Elements**:  
+   - Checkboxes, dropdowns, and file uploads are functional.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Challenges
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **CSS Alignment**: Aligning progress bar steps evenly required careful use of Flexbox.  
+   **Solution**: Used Tailwind’s `justify-between` and `w-8 h-8` utilities.
 
-## Learn More
+2. **Responsive Testing**: Ensuring consistency across screen sizes was challenging.  
+   **Solution**: Used Chrome DevTools for real-time responsiveness testing.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **File Upload Handling**: Implementing an interactive upload component that matches the design.  
+   **Solution**: Added custom file input styling with Tailwind.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Assumptions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. The input fields and file upload are placeholders without backend integration.
+2. Progress bar only visually reflects the steps; no active navigation between steps was implemented.
+3. The placeholder values for "Claim Value" and "Contract Value" were based on the design.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Screenshots
 
-### Making a Progressive Web App
+### Desktop View
+![Desktop View](./screenshots/desktop-view.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Tablet View
+![Tablet View](./screenshots/tablet-view.png)
 
-### Advanced Configuration
+### Mobile View
+![Mobile View](./screenshots/mobile-view.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## How to Run the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/jur-dashboard.git
+   cd jur-dashboard
